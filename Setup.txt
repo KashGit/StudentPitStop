@@ -13,7 +13,7 @@ download bootstrap zip file
 http://getbootstrap.com/getting-started/#download
 
 now install node packages
-copy package.jason file to root folder and run npm install
+copy package.json file to root folder and run npm install
 new folder node-modules will be created in root folder with packages inside it.
 
 install angular router
