@@ -1,0 +1,27 @@
+Clone: GITHUB to LOCAL
+D:\Projects>git clone https://github.com/KashGit/StudentPitStop.git
+
+Download directly angular bootstrap ui [Note: requires AngularJS 1.4.x, tested with 1.4.7]
+https://angular-ui.github.io/bootstrap/
+
+Download specific version of angular 1.4.7
+
+D:\Projects\StudentPitStop>bower install angular-ui-bootstrap --save
+delete other unwanted files from folder after download.
+
+download bootstrap zip file
+http://getbootstrap.com/getting-started/#download
+
+now install node packages
+copy package.jason file to root folder and run npm install
+new folder node-modules will be created in root folder with packages inside it.
+
+install angular router
+D:\Projects\StudentPitStop>bower install angular-ui-router
+
+install angular animate
+D:\Projects\StudentPitStop>bower install ngAnimate@1.4.7
+if bower package not available use cdn to downnload file
+http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js
+
+
