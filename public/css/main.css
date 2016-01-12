@@ -1,0 +1,100 @@
+body {
+	font-family: 'Droid Sans';
+	background: #fff;
+	color: #888888;
+	font-size: 12px;
+}
+.navbar{height:40px; margin:0;min-height:0;}
+
+.navbar-default{border-color:#fff;background-color:#fff;}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+    padding-top:10px; padding-bottom:10px;
+}
+
+
+ .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #52b6ec;
+	
+}
+.navbar-default .navbar-nav > .active > a {
+border-bottom: 2px solid #52b6ec;
+background-color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #52b6ec;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #52b6ec;
+}
+
+.dropdown-menu {
+    font-size: 12px;
+}
+
+.dropdown-menu > li > a {
+    color: #777;   
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #52b6ec;
+}
+
+.brand-text h2 {
+    color: #000;
+    text-shadow: 0 0 1px #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+    text-align: center;
+    margin-right:10px;
+	padding:5px;
+	
+}
+.color-blue{ color:#52b6ec;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Droid Sans" !important;
+	font-weight: normal !important;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 26px;
+}
+
+h6 {
+  font-size: 11px;
+  line-height: 24px;
+}
+
