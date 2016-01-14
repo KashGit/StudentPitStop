@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
- <meta charset="utf-8">
+ <meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>hello html5 and bootstrap</title>
  <!--[if lt IE 9]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please 
@@ -22,10 +23,9 @@ article,aside,details,header {display:block;}
  </style>
 </head>
 <body ng-app="app" ng-controller="mainCtrl">
-    <header>
-        <div class="container">
-		    <nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
+    <header>        
+		<nav class="navbar navbar-default navbar-fixed-top">
+		    <div class="container-fluid">
 			    <div class="navbar-header">
 				    <button type="button" class="navbar-toggle collapsed">
 				        <span class="sr-only"></span>
@@ -38,29 +38,66 @@ article,aside,details,header {display:block;}
 				</div>
 				<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">		 
-		            <li class="active"><a href="#home" ng-click="tabSel=0"><span class="glyphicon glyphicon-home"></span></a></li>
-			        <li><a href="#about" ng-click="tabSel=1">Mock Center</a></li>
-					<li><a href="#about" ng-click="tabSel=1">Exam Center</a></li>
+		            <li class="active"><a href="#home" ng-click="tabSel=0" class="hvr-shutter-out-vertical"><span class="glyphicon glyphicon-home"></span></a></li>
+			        <li><a href="#about" class="hvr-shutter-out-vertical" ng-click="tabSel=1">Mock Center</a></li>
+					<li><a href="#about" class="hvr-shutter-out-vertical" ng-click="tabSel=1">Exam Center</a></li>
 			        <li class="dropdown" uib-dropdown>
-			            <a href="home" uib-dropdown-toggle>College Center<span class="caret"></span></a>			    
+			            <a href="home" class="hvr-shutter-out-vertical" uib-dropdown-toggle>College Center<span class="caret"></span></a>			    
 			            <ul class="dropdown-menu">
-				            <li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
-							<li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
-						    <li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
+				            <li><a href="#mba" class="hvr-shutter-out-vertical" ng-click="tabSel=2">MBA</a></li>
+							<li><a href="#mba" class="hvr-shutter-out-vertical" ng-click="tabSel=2">MBA</a></li>
+						    <li><a href="#mba" class="hvr-shutter-out-vertical" ng-click="tabSel=2">MBA</a></li>
 				        </ul>			    
 			        </li>
-					<li><a href="#about" ng-click="tabSel=1">Addmission Center</a></li>					
-					<li><a href="#about" ng-click="tabSel=1">About Us</a></li>
-			        <li><a href="#contact" ng-click="tabSel=3">Contact Us</a></li>
+					<li><a href="#about" ng-click="tabSel=1" class="hvr-shutter-out-vertical">Addmission Center</a></li>					
+					<li><a href="#about" ng-click="tabSel=1" class="hvr-shutter-out-vertical">About Us</a></li>
+			        <!-- <li><a href="#contact" ng-click="tabSel=3">Contact Us</a></li> -->
 		        </ul>
 				
 				</div><!-- Nav collapse-->
 		    </div><!--Container nav -->
-		
-		</nav>
-		</div>
+		</nav>		
     </header>
-	<div class="container">
+	<div class="container-fluid">
+	    <div class="row margin-top-50">
+		    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">			
+			<div class="main-banner" style="background-color:#414141">					
+			    <h1> <span>Exam Center</span></h1>
+				<span class="glyphicon glyphicon-road icon"></span>
+				<div style="padding-top:20px" class="text-center">
+				<ul style="list-style:none;color:white;font-size:14px;padding:0">
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>	 
+                </ul>
+                
+				</div>
+				<div  style="padding:20px 0;" class="text-center">
+                        <a href="" class="btn btn-sm btn-primary hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> Mock Center</a>
+                        <a href="" class="btn btn-sm btn-warning hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> Exam Center</a>
+                        <a href="" class="btn btn-sm btn-danger hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> College Center</a>
+                </div>
+				
+			</div>
+            </div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<section id="main-slider"> 
+			    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+                            <uib-slide ng-repeat="slide in slides" active="slide.active">
+                                <img ng-src="{{slide.image}}">
+                                    <div class="carousel-caption">
+                                        <h3>{{slide.text}}</h3>
+                                        <h3>Direct Admission To Top Colleges Of India</h3>
+										<button type="button" class="btn btn-sm btn-danger hvr-wobble-vertical">Enquire</button>
+									</div>                                  
+                            </uib-slide>
+							
+                </uib-carousel>
+			</section>
+			</div>
+		</div> <!-- Carousel row -->
+	
 	</div><!-- main container -->
 	
 	

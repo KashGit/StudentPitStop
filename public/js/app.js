@@ -12,15 +12,14 @@ app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
 
 angular.module('app').controller('mainCtrl', function ($scope) {
   $scope.isCollapsed = false;
-  $scope.myInterval = 5000;
+  $scope.myInterval = 4000;
   $scope.noWrapSlides = false;
   var slides = $scope.slides = [];
   $scope.addSlide = function() {
-    var newWidth = 750;
+    var newWidth = 768;
     slides.push({
-      image: '//placehold.it/' + newWidth + '/300',
-      text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-        ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+      image: '//lorempixel.com/' + newWidth + '/400',
+      text: ['Ramaiya Institue of Engineering','Dyanand Sagar Eng and Medical College','PESIT Medical and Eng College','Son John College of Science'][slides.length % 4]
     });
   };
   for (var i = 0; i < 4; i++) {
