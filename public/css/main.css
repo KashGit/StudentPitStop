@@ -99,9 +99,9 @@ h6 {
   font-size: 11px;
   line-height: 24px;
 }
-.main-banner {padding-top:30px;}
+.main-banner {padding-top:10px;background-color:#414141;}
 .main-banner .icon { margin-left:45%;font-size:50px;color:#52b6ec;}
-.main-banner h1 {color:#ffa31a;text-shadow: 0 3px rgba(0, 0, 0, 0.1); 
+.main-banner h1 {text-shadow: 0 3px rgba(0, 0, 0, 0.1); 
 display: inline-block;
     font-family: "Droid Sans" !important;    
     font-size: 30px;
@@ -143,13 +143,58 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
     left: auto;
 	}
 
-.main-banner h1 span {padding: 0px 10px;
+.main-banner h1 span {
+    padding: 0px 10px;
     position: relative;
     z-index: 2;
 	background: #414141;
 }
-    
+.main-banner >#divCenters{ border-radius:10px;margin:0 20px; border:1px solid white;}
+ 
 /*Animation */
+/*Centers Animation */
+.animate-show {
+  opacity: 1;
+  }
+
+.animate-show.ng-hide-remove {
+  /*transition: all linear 2.9s;*/
+  animation:1s show ease-in-out;
+}
+
+.animate-show.ng-hide {
+  opacity: 0;
+  }
+  
+  @keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% { 
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  100% { 
+    opacity:1;
+    transform: scale(1);
+  }
+}
+  
+
 /* Wobble Vertical */
 @-webkit-keyframes hvr-wobble-vertical {
   16.65% {

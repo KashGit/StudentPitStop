@@ -61,8 +61,22 @@ article,aside,details,header {display:block;}
 	<div class="container-fluid">
 	    <div class="row margin-top-50">
 		    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">			
-			<div class="main-banner" style="background-color:#414141">					
-			    <h1> <span>Exam Center</span></h1>
+			<div class="main-banner">
+			<div id="divCenters" ng-mouseover="divMouseover()" ng-mouseleave="divDisplay()" >
+				<div  class="animate-show" ng-show="divId===1">
+			    <h1 style="color:#337ab7"> <span>Mock Center</span></h1>
+				<span class="glyphicon glyphicon-screenshot icon"></span>	
+				<div style="padding-top:20px" class="text-center">
+				<ul style="list-style:none;color:white;font-size:14px;padding:0">
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>	 
+                </ul>                
+				</div>
+				</div> <!--Exam Center -->
+				<div  class="animate-show" ng-show="divId===2">
+			    <h1 style="color:#ffa31a"> <span>Exam Center</span></h1>
 				<span class="glyphicon glyphicon-road icon"></span>
 				<div style="padding-top:20px" class="text-center">
 				<ul style="list-style:none;color:white;font-size:14px;padding:0">
@@ -70,8 +84,21 @@ article,aside,details,header {display:block;}
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>	 
-                </ul>
-                
+                </ul>                
+				</div>	
+				</div> <!--Exam Center -->
+				<div  class="animate-show" ng-show="divId===3">
+			    <h1 style="color:#D9534F"> <span>College Center</span></h1>
+				<span class="glyphicon glyphicon-education icon"></span>
+				<div style="padding-top:20px" class="text-center">
+				<ul style="list-style:none;color:white;font-size:14px;padding:0">
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
+                 <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>	 
+                </ul>                
+				</div>
+				</div> <!--Exam Center -->
 				</div>
 				<div  style="padding:20px 0;" class="text-center">
                         <a href="" class="btn btn-sm btn-primary hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> Mock Center</a>
@@ -85,7 +112,7 @@ article,aside,details,header {display:block;}
 			<section id="main-slider"> 
 			    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
                             <uib-slide ng-repeat="slide in slides" active="slide.active">
-                                <img ng-src="{{slide.image}}">
+                                <img ng-src="{{slide.image}}" >
                                     <div class="carousel-caption">
                                         <h3>{{slide.text}}</h3>
                                         <h3>Direct Admission To Top Colleges Of India</h3>
