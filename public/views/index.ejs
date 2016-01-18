@@ -16,11 +16,11 @@
  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
- <style type="text/css">
+ <!-- <style type="text/css">
 article,aside,details,header {display:block;}
 .jumbotron {background-color:#2E2D88;color:white;}
 .nav-tabs{margin-bottom:0;}
- </style>
+ </style> -->
 </head>
 <body ng-app="app" ng-controller="mainCtrl">
     <header>        
@@ -62,11 +62,11 @@ article,aside,details,header {display:block;}
 	    <div class="row margin-top-50">
 		    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">			
 			<div class="main-banner">
-			<div id="divCenters" ng-mouseover="divMouseover()" ng-mouseleave="divDisplay()" >
+			<div id="divCenters" ng-mouseover="divMouseover()" ng-mouseleave="divDisplay()" style="padding-top:10px;" >
 				<div  class="animate-show" ng-show="divId===1">
 			    <h1 style="color:#337ab7"> <span>Mock Center</span></h1>
 				<span class="glyphicon glyphicon-screenshot icon"></span>	
-				<div style="padding-top:20px" class="text-center">
+				<div class="text-center">
 				<ul style="list-style:none;color:white;font-size:14px;padding:0">
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
@@ -78,7 +78,7 @@ article,aside,details,header {display:block;}
 				<div  class="animate-show" ng-show="divId===2">
 			    <h1 style="color:#ffa31a"> <span>Exam Center</span></h1>
 				<span class="glyphicon glyphicon-road icon"></span>
-				<div style="padding-top:20px" class="text-center">
+				<div class="text-center">
 				<ul style="list-style:none;color:white;font-size:14px;padding:0">
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
@@ -90,7 +90,7 @@ article,aside,details,header {display:block;}
 				<div  class="animate-show" ng-show="divId===3">
 			    <h1 style="color:#D9534F"> <span>College Center</span></h1>
 				<span class="glyphicon glyphicon-education icon"></span>
-				<div style="padding-top:20px" class="text-center">
+				<div class="text-center">
 				<ul style="list-style:none;color:white;font-size:14px;padding:0">
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
                  <li ><span class="glyphicon glyphicon-circle-arrow-right" style="color:#52b6ec"></span> Bacon ipsum dolor amet shank beef ribs fatback</li>
@@ -100,10 +100,12 @@ article,aside,details,header {display:block;}
 				</div>
 				</div> <!--Exam Center -->
 				</div>
+					
 				<div  style="padding:20px 0;" class="text-center">
-                        <a href="" class="btn btn-sm btn-primary hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> Mock Center</a>
+				
+                        <a href="" class="btn btn-sm btn-primary hvr-wobble-vertical"><span class="glyphicon glyphicon-screenshot"></span> Mock Center</a>
                         <a href="" class="btn btn-sm btn-warning hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> Exam Center</a>
-                        <a href="" class="btn btn-sm btn-danger hvr-wobble-vertical"><span class="glyphicon glyphicon-road"></span> College Center</a>
+                        <a href="" class="btn btn-sm btn-danger hvr-wobble-vertical"><span class="glyphicon glyphicon-education"></span> College Center</a>
                 </div>
 				
 			</div>
@@ -124,7 +126,78 @@ article,aside,details,header {display:block;}
 			</section>
 			</div>
 		</div> <!-- Carousel row -->
-	
+		
+		<section>
+		<div class="row" style="padding-top:10px;">
+		<div class="col-lg-12 text-center"><h2>Accelerate Your Career.</h2>
+		<h4>By subscribing to our news letter for latest updates, events and sample papers. 
+		<button type="button" class="btn btn-white">Subscribe <span class="glyphicon glyphicon-share-alt"></span></button></h4>
+		</div>
+		</div>
+		<div class="row gray-bg" style="margin-top:10px;">
+		    <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="box-style-1 white-bg">
+			<span class="glyphicon glyphicon-share-alt"></span>
+			<h3>Events, News Updates</h3>			
+			
+			</div>
+		    </div> -->
+		    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="box-style-1 white-bg">
+			<span class="glyphicon glyphicon-share-alt"></span> 
+			<h3>Mock Center</h3>		
+			</div>				
+			
+		    </div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<div class="box-style-1 white-bg">
+			<span class="glyphicon glyphicon-share-alt"></span>
+			<h3>  Exam Center</h3>			
+			</div>
+			</div>
+			<div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+			<div class="box-style-1 white-bg">			
+			<h3>College Center <a title="Search Colleges" class="btn btn-xs btn-danger">Explore Colleges <span class="glyphicon glyphicon-chevron-right"></span></a></h3>
+			<div class="separator"></div>
+			<div class="media">
+			<h4>Ramiay Institue of Engineering</h4>
+		    <div class="media-left media-top">
+			    <a href=""><img src="//lorempixel.com/100/80"></a>
+			</div>
+			<div class="media-body">
+			    <ul class="nav nav-pills"><li>Rank 1</li><li>Govt </li><li>Avg Campus</li></ul>
+				<p>
+				Introduction:For many years now, we have watched what  appears to be a failing school system appears to be a failing school system .
+				</p>
+				<a href="" style="font-size:10px">View Details</a>
+			</div>
+		</div><!--Media-->
+		<div class="media">
+			<h4>Dyanand Sagar Institute of Engineering and Medical</h4>
+		    <div class="media-left media-top">
+			   <a href=""><img src="//lorempixel.com/100/81"></a>
+			</div>
+			<div class="media-body">
+			    <ul class="nav nav-pills"><li>Rank 1</li><li>Govt </li><li>Avg Campus</li></ul>
+				<p>Introduction:   For many years now, we have watched what appears to be a failing school system</p>
+				<a href="" style="font-size:10px">View Details</a>
+			</div>
+		</div><!--Media-->
+		<div class="media">
+			<h4>Dyanand Sagar Institute of Engineering and Medical</h4>
+		    <div class="media-left media-top">
+			    <a href=""><img src="//lorempixel.com/100/82"></a>
+			</div>
+			<div class="media-body">
+			    <ul class="nav nav-pills"><li>Rank 1</li><li>Govt </li><li>Avg Campus</li></ul>
+				<p>Introduction:   For many years now, we have watched what appears to be a failing school system</p>
+				<a href="" style="font-size:10px">View Details</a>
+			</div>
+		</div><!--Media-->
+			</div>
+		    </div>
+		</div> <!-- second section row -->
+	    </section>
 	</div><!-- main container -->
 	
 	
